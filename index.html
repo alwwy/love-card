@@ -112,7 +112,7 @@ button:active {
     max-width: 700px;
     background: white;
     border: 6px solid black;
-    padding: 60px 40px 40px 40px;
+    padding: 80px 40px 40px 40px;
     box-sizing: border-box;
     text-align: center;
     top: 50%;
@@ -121,7 +121,9 @@ button:active {
     transition: all 0.8s cubic-bezier(.34,1.56,.64,1);
     z-index: 5;
     box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    position: fixed;
 }
+
 
 
 /* Polaroid */
@@ -135,6 +137,7 @@ button:active {
     padding: 8px;
     box-shadow: 6px 6px 0 black;
 }
+
 
 
 .polaroid img {
@@ -176,16 +179,28 @@ button:active {
 }
 
 @media(max-width: 600px){
+
     .card {
         width: 90%;
-        padding: 25px;
+        padding: 140px 20px 30px 20px;
     }
+
     .polaroid {
-        width: 120px;
+        position: absolute;
         top: 20px;
-        right: 20px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 120px;
     }
+
+    #rainbowName {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
 }
+
 </style>
 </head>
 
